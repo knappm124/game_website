@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #7282AC;
+    --secondary-color: #CF6E76;
+    --tertiary-color: #48748E;
+    --black: #2A293A;
+    --white: #F2F4F4;
+    --grey: #D9D9D9;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+h1 {
+
+}
+
+h2 {
+    
+}
+
+p {
+    
+}
+
+nav {
+    background-color: var(--primary-color);
+}

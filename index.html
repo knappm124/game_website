@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 <body>
     <header>
+        <a href="#main_content" style="visibility: hidden;">Skip to main content</a>
         <img alt="Games logo">
     </header>
     <main>
-        <h1></h1>
+        <h1 id="main_content"></h1>
         <h2>What is it?</h1>
         <p> is a one stop shop for playing games. Both board games and card games can require 
             additional items that are easy to lose or get damaged. has all that and more to help 
@@ -25,10 +27,10 @@
             or game length in order to find the right game for you.</p>
     </main>
     <nav>
-        <button>Scorecard</button>
-        <button>Dictionary</button>
-        <button>User Profile</button>
-        <button>Games</button>
+        <button onclick="location.href='scorecard.html'">Scorecard</button>
+        <button onclick="location.href='dictionary.html'">Dictionary</button>
+        <button onclick="location.href='login.html'">User Profile</button>
+        <button onclick="location.href='games.html'">Games</button>
         <button>Menu</button>
     </nav>
 </body>
