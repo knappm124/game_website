@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+    <title>The Game Master</title>
 </head>
 <body>
     <header>
-        <a href="#main_content" style="visibility: hidden;">Skip to main content</a>
-        <img alt="Games logo">
+        <a href="#main_content" id="skip">Skip to main content</a>
+        <img src="img/GameMaster.png" alt="Game Master logo">
     </header>
     <main>
-        <h1 id="main_content"></h1>
-        <h2>What is it?</h1>
-        <p> is a one stop shop for playing games. Both board games and card games can require 
+        <h1 id="main_content">What is it?</h1>
+        <p> Game Master is a one stop shop for playing games. Both board games and card games can require 
             additional items that are easy to lose or get damaged. has all that and more to help 
             make your games faster and easier.</p>
-        <h2>What can it do?</h2>
-        <p> puts some of the most popular games at your fingertips. has pre-made game pages 
-            for beloved games like Clue, Monopoly, and Scrabble, as well as lesser known games like 
-            . Each game page has a link to the rules for the game and any necessary items like timers, 
-            dice, and .</p>
-        <h2>Not sure what to play?</h2>
+        <h1>What can it do?</h2>
+        <p> Game Master puts some of the most popular games at your fingertips. has pre-made game pages 
+            for classic games like Clue, Monopoly, and Scrabble, as well as newer games like Settlers of 
+            Catan and Ticket to Ride. Each game page has a link to the rules for the game and any necessary 
+            items like timers, dice, and scorecards.</p>
+        <h1>Not sure what to play?</h2>
         <p>Go to the games list and filter by options like number of players, type of game, 
             or game length in order to find the right game for you.</p>
     </main>
     <nav>
-        <button onclick="location.href='scorecard.html'">Scorecard</button>
-        <button onclick="location.href='dictionary.html'">Dictionary</button>
-        <button onclick="location.href='login.html'">User Profile</button>
-        <button onclick="location.href='games.html'">Games</button>
-        <button>Menu</button>
+        <button onclick="location.href='scorecard.html'"><img src="img/scorecard.png" alt="Scorecards"></button>
+        <button onclick="location.href='dictionary.html'"><img src="img/dictionary.png" alt="Dictionary"></button>
+        <button onclick="location.href='login.html'"><img src="img/user.png" alt="User Profile"></button>
+        <button onclick="location.href='games.html'"><img src="img/boardgame.png"></button>
+        <button id="additionalMenu"><img src="img/menu.png" alt="Additional Menu"></button>
     </nav>
 </body>
 </html>
