@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/dictionary.js"></script>
+    <title>Dictionary</title>
 </head>
 <body>
     <header>
@@ -11,7 +13,13 @@
         <img src="img/GameMaster.png" alt="Game Master logo">
     </header>
     <main>
-       
+        <h1>Type in a word to see it's definition</h1>
+        <form id="define_form">
+            <input type="text" id="define_word">
+            <button id="submit">Submit</button>
+        </form>
+        <h2 id="title"><h2>
+        <p id="definition"></p>
     </main>
     <nav>
         <button onclick="location.href='scorecard.html'"><img src="img/scorecard.png" alt="Scorecards"></button>
