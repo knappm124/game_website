@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>The Game Master</title>
 </head>
 <body>
-    
+    <header>
+        <a href="#main_content" id="skip">Skip to main content</a>
+        <img src="img/GameMasterShort.png" alt="Game Master logo">
+    </header>
+    <main>
+        <h1 id="main_content">Sign In</h1>
+        <p>Signing in lets you save your scorecards and custom templates</p>
+        <form class="column">
+            <div class="row">
+                <div class="column">
+                    <label for="email">Email</label>
+                    <label for="password">Password</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="email">
+                    <input type="password" id="password">
+                </div>
+            </div>
+            <button type="submit" class="spaced">Sign In</button>
+            <p>or</p>
+            <button id="register" class="spaced">Register</button>
+        </form>
+    </main>
+    <nav>
+        <button onclick="location.href='scorecard.html'"><img src="img/scorecard.png" alt="Scorecards"></button>
+        <button onclick="location.href='dictionary.html'"><img src="img/dictionary.png" alt="Dictionary"></button>
+        <button onclick="location.href='login.html'" id="active"><img src="img/user.png" alt="User Profile"></button>
+        <button onclick="location.href='games.html'"><img src="img/boardgame.png"></button>
+        <button id="additionalMenu"><img src="img/menu.png" alt="Additional Menu"></button>
+    </nav>
 </body>
 </html>

@@ -1,0 +1,61 @@
+main {
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+input[type=text] {
+    width: 100%;
+    max-width: 200px;
+    margin: 5px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=number] {
+    padding: 1px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button.notnav {
+    max-width: 200px;
+    margin: 20px auto;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button.notnav:hover {
+    box-shadow: 5px 5px 5px var(--black);
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+tr {
+    border: 1px solid var(--black);
+}
+
+td{
+    padding: 1px;
+    border: 1px solid var(--black);
+}
+
+.header, .total {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border: 1px solid var(--black);
+}
