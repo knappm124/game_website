@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    min-width: 200px;
+    margin: auto;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    color: red;
+}
+
+input, textarea {
+    margin-bottom: 5px;
+}
+
+button[type=submit] {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+button[type=submit]:hover {
+    box-shadow: 5px 5px 5px var(--grey);
+}

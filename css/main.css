@@ -80,3 +80,35 @@ nav button:hover {
 #active{
     background-color: var(--secondary-color);
 }
+
+aside {
+    background-color: var(--white);
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    flex-flow: column nowrap;
+    display: flex;
+}
+
+a {
+    font-size: 3em;
+    margin: 5px 20px;
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+    font-family: 'Kalam', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+aside .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}

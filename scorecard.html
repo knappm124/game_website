@@ -10,7 +10,7 @@
 <body>
     <header>
         <a href="#main_content" id="skip">Skip to main content</a>
-        <img src="img/GameMasterShort.png" alt="Game Master logo">
+        <a href="index.html"><img src="img/GameMasterShort.png" alt="Game Master logo"></a>
     </header>
     <main>
         <h1 id="main_content">Scorecard</h1>
@@ -20,13 +20,19 @@
         <button id="begin" style="display: none" class="notnav">Begin Game</button>
         <button id="add" class="notnav">Add a Player</button>
     </main>
+    <aside aria-hidden="true">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </aside>
     <nav>
-        <button onclick="location.href='scorecard.html'" id="active"><img src="img/scorecard.png" alt="Scorecards"></button>
+        <button onclick="location.href='scorecard.html'"><img src="img/scorecard.png" alt="Scorecards"></button>
         <button onclick="location.href='dictionary.html'"><img src="img/dictionary.png" alt="Dictionary"></button>
         <button onclick="location.href='login.html'"><img src="img/user.png" alt="User Profile"></button>
         <button onclick="location.href='games.html'"><img src="img/boardgame.png"></button>
-        <button id="additionalMenu"><img src="img/menu.png" alt="Additional Menu"></button>
+        <button onclick="openNav()" id="additionalMenu"><img src="img/menu.png" alt="Additional Menu"></button>
     </nav>
     <script src="js/scorecard.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
