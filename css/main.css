@@ -5,13 +5,14 @@
     --black: #2A293A;
     --white: #F2F4F4;
     --grey: #D9D9D9;
+    --primary-dark: #5B688A;
 }
 
 body {
     background-color: var(--white);
     color: var(--black);
     width: 100%;
-    min-width: 650px;
+    min-width: 400px;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -40,6 +41,11 @@ header {
     text-align: center;
 }
 
+header img {
+    min-width: 400px;
+    width: 80%;
+}
+
 h1 {
     font-family: 'Kalam', Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px 5% 0;
@@ -52,6 +58,7 @@ p {
 }
 
 nav {
+    z-index: 3;
     background-color: var(--primary-color);
     flex-flow:row nowrap;
     display: flex;
@@ -105,10 +112,19 @@ a {
     font-family: 'Kalam', Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#skip {
+    font-size: 1em;
+    padding: 0;
+}
+
 aside .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.active {
+    background-color: var(--primary-dark);
 }

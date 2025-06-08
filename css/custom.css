@@ -1,0 +1,173 @@
+h1 {
+    text-align: center;
+    width: 70%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.custom {
+    background-color: var(--grey);
+    min-height: 200px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.fa-cloud {
+    font-size: 3em;
+    max-width: 60px;
+    max-height: 40px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    justify-content: center;
+    line-height: 100px;
+}
+
+.pieces {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px auto;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.custom .notnav  {
+    max-width: 250px;
+    margin: 20px auto;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+input[type=number] {
+    font-size: 1.2em;
+    height: 30px;
+    padding: 2px 5px;
+}
+
+.transparent {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button img {
+    max-height: 80px;
+}
+
+.dice {
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    margin: 20px auto;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  font-size: 1em;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.dice .tooltiptext {
+    font-size: .35em;
+}
+
+.timer .tooltiptext {
+    font-size: .8em;
+}
+
+.timer, .tally {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    margin: 20px;
+}
+
+.checklist {
+    background-color: var(--tertiary-color);
+    color: var(--white);
+    padding: 5px;
+    text-align: center;
+    margin: 20px auto;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.hover:hover {
+    box-shadow: 5px 5px 5px var(--black);
+}
+
+.tally button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    line-height: 46px;
+    padding: 0px;
+    border: none;
+    background-color: var(--tertiary-color);
+    color: var(--white);
+}
+
+.tally p {
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fa-cloud .tooltiptext {
+    font-size: .3em;
+}
+
+.right {
+    align-self: flex-end;
+    margin: 10px 40px;
+    max-height: 40px;
+    max-width: 60px;
+    padding: 0px;
+}
+
+.right .tooltip .tooltiptext{
+    position: relative;
+    right: 10px;
+}
+
+.wheel, .card {
+    max-height: 200px;
+    margin: 10px;
+}

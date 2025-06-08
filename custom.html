@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Kalam:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>The Game Master</title>
+</head>
+
+<body>
+    <header>
+        <a href="#main_content" id="skip">Skip to main content</a>
+        <a href="index.html"><img src="img/GameMasterShort.png" alt="Game Master logo"></a>
+    </header>
+    <main>
+        <div class="row">
+            <a href="games.html"><i class="fa-solid fa-arrow-left" aria-hidden="false" aria-label="back"></i></a>
+            <h1 id="main_content">Custom Game Template</h1>
+        </div>
+        <article class="custom">
+            <button class="transparent right"><i class="fa-solid fa-cloud tooltip"><p class="tooltiptext" aria-label="tool tip">Save template to your account</p></i></button>
+            <h2>Click on a game piece to add it to the template</h2>
+        </article>
+        <article class="pieces">
+            <button onclick="dice()" class="transparent tooltip"><img src="img/dice_13532678.png" alt="add dice"><p class="tooltiptext" aria-label="tool tip">Click to add a die</p></button>
+            <button onclick="timer()" class="transparent tooltip"><img src="img/hourglass_9721789.png" alt="add timer"><p class="tooltiptext" aria-label="tool tip">Click to add a timer</p></button>
+            <button onclick="wheel()" class="transparent tooltip"><img src="img/5052351.png" alt="add spinning wheel"><p class="tooltiptext" aria-label="tool tip">Click to add a wheel</p></button>
+            <button onclick="checklist()" class="transparent tooltip"><img src="img/pngtree-office-checklist-icon-business-checklist-survey-test-icon-png-image_2047566.png" alt="add checklist"><p class="tooltiptext" aria-label="tool tip">Click to add a checklist</p></button>
+            <button onclick="tally()" class="transparent tooltip"><img src="img/pngtree-tally-line-icon-vector-png-image_6651022.png" alt="add tally"><p class="tooltiptext" aria-label="tool tip">Click to add a tally</p></button>
+            <button onclick="cards()" class="transparent tooltip"><img src="img/4214783-200.png" alt="add deck of cards"><p class="tooltiptext" aria-label="tool tip">Click to add a deck of cards</p></button>
+        </article>
+    </main>
+    <aside aria-hidden="true">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </aside>
+    <nav>
+        <button onclick="location.href='scorecard.html'"><img src="img/scorecard.png" alt="Scorecards"></button>
+        <button onclick="location.href='dictionary.html'"><img src="img/dictionary.png" alt="Dictionary"></button>
+        <button onclick="location.href='login.html'"><img src="img/user.png" alt="User Profile"></button>
+        <button onclick="" class="active"><img src="img/boardgame.png"></button>
+        <button onclick="openNav()" id="additionalMenu"><img src="img/menu.png" alt="Additional Menu"></button>
+    </nav>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://kit.fontawesome.com/3f1fd233a9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
